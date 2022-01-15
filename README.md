@@ -1,2 +1,2 @@
 # Email-Extractor
-Email Extractor is a simple python programe that helps you extract emails from the bulk of text. And put every email domain in ther own file.
+Email Extractor is a simple Python program that helps you fetch a large batch of emails to neatly put each domain in their own file.
