@@ -17,7 +17,6 @@ def findDomains(lines):
     i+=1
     if not domain[1] in domains:
       domains.append(domain[1])
-        
   return domains
 
 
@@ -31,7 +30,8 @@ def domainsDic(emails,domains):
       e = email.split('@')
       if e[1] == domain:
         lst.append(email)
-    
+        
+    #delete the added emails
     for email in lst:
       emails.remove(email)
       print('Submitted --> ',email)
@@ -57,7 +57,6 @@ def saveToFile(dic):
 
 #ProgramPrincipal
 emails = getFile()
-ok = False
 domains = findDomains(emails)
 dic = domainsDic(emails,domains)
 print(saveToFile(dic))
